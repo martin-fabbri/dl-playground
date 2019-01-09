@@ -1,4 +1,226 @@
-diff --git a/autoencoders/data/fashionmnist.zip b/autoencoders/data/fashionmnist.zip
-new file mode 100644
-index 0000000..5507860
-Binary files /dev/null and b/autoencoders/data/fashionmnist.zip differ
+diff --git a/dl-debug/debug-mnist-linear.ipynb b/dl-debug/debug-mnist-linear.ipynb
+index f58c975..84d8c88 100644
+--- a/dl-debug/debug-mnist-linear.ipynb
++++ b/dl-debug/debug-mnist-linear.ipynb
+@@ -313,7 +313,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 32,
++   "execution_count": 34,
+    "metadata": {},
+    "outputs": [
+     {
+@@ -323,34 +323,34 @@
+       "Resuming run: https://app.wandb.ai/martin-fabbri-a/dl-playground-dl-debug/runs/pvp2h2wf\n",
+       "Train on 60000 samples, validate on 10000 samples\n",
+       "Epoch 1/10\n",
+-      "60000/60000 [==============================] - 5s 77us/step - loss: 5.4893 - acc: 0.6539 - val_loss: 4.0396 - val_acc: 0.7458\n",
++      "60000/60000 [==============================] - 4s 74us/step - loss: 3.9270 - acc: 0.7554 - val_loss: 3.8590 - val_acc: 0.7598\n",
+       "Epoch 2/10\n",
+-      "60000/60000 [==============================] - 4s 68us/step - loss: 4.1550 - acc: 0.7392 - val_loss: 3.9719 - val_acc: 0.7519\n",
++      "60000/60000 [==============================] - 4s 70us/step - loss: 3.9353 - acc: 0.7550 - val_loss: 3.8464 - val_acc: 0.7606\n",
+       "Epoch 3/10\n",
+-      "60000/60000 [==============================] - 4s 68us/step - loss: 4.0587 - acc: 0.7462 - val_loss: 3.8622 - val_acc: 0.7595\n",
++      "60000/60000 [==============================] - 4s 74us/step - loss: 3.9445 - acc: 0.7542 - val_loss: 3.9200 - val_acc: 0.7556\n",
+       "Epoch 4/10\n",
+-      "60000/60000 [==============================] - 4s 69us/step - loss: 4.0353 - acc: 0.7478 - val_loss: 4.0549 - val_acc: 0.7469\n",
++      "60000/60000 [==============================] - 4s 74us/step - loss: 3.9123 - acc: 0.7563 - val_loss: 3.8565 - val_acc: 0.7600\n",
+       "Epoch 5/10\n",
+-      "60000/60000 [==============================] - 4s 69us/step - loss: 3.9818 - acc: 0.7514 - val_loss: 4.2586 - val_acc: 0.7341\n",
++      "60000/60000 [==============================] - 5s 76us/step - loss: 3.8728 - acc: 0.7588 - val_loss: 3.8803 - val_acc: 0.7583\n",
+       "Epoch 6/10\n",
+-      "60000/60000 [==============================] - 4s 69us/step - loss: 3.9825 - acc: 0.7513 - val_loss: 3.8633 - val_acc: 0.7592\n",
++      "60000/60000 [==============================] - 5s 78us/step - loss: 3.8539 - acc: 0.7601 - val_loss: 3.8001 - val_acc: 0.7634\n",
+       "Epoch 7/10\n",
+-      "60000/60000 [==============================] - 4s 69us/step - loss: 3.9601 - acc: 0.7530 - val_loss: 3.9111 - val_acc: 0.7562\n",
++      "60000/60000 [==============================] - 5s 78us/step - loss: 3.8438 - acc: 0.7606 - val_loss: 3.9451 - val_acc: 0.7544\n",
+       "Epoch 8/10\n",
+-      "60000/60000 [==============================] - 4s 71us/step - loss: 3.9425 - acc: 0.7542 - val_loss: 4.1286 - val_acc: 0.7422\n",
++      "60000/60000 [==============================] - 5s 78us/step - loss: 3.8492 - acc: 0.7605 - val_loss: 3.8725 - val_acc: 0.7586\n",
+       "Epoch 9/10\n",
+-      "60000/60000 [==============================] - 4s 70us/step - loss: 3.9463 - acc: 0.7538 - val_loss: 3.8786 - val_acc: 0.7588\n",
++      "60000/60000 [==============================] - 5s 77us/step - loss: 3.8744 - acc: 0.7586 - val_loss: 3.7998 - val_acc: 0.7635\n",
+       "Epoch 10/10\n",
+-      "60000/60000 [==============================] - 4s 70us/step - loss: 3.9357 - acc: 0.7548 - val_loss: 3.9827 - val_acc: 0.7520\n"
++      "60000/60000 [==============================] - 5s 78us/step - loss: 3.8580 - acc: 0.7599 - val_loss: 3.8239 - val_acc: 0.7618\n"
+      ]
+     },
+     {
+      "data": {
+       "text/plain": [
+-       "<keras.callbacks.History at 0xb54c496d8>"
++       "<keras.callbacks.History at 0x10db0cef0>"
+       ]
+      },
+-     "execution_count": 32,
++     "execution_count": 34,
+      "metadata": {},
+      "output_type": "execute_result"
+     }
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/diff.patch b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/diff.patch
+index 82b0fb8..e69de29 100644
+--- a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/diff.patch
++++ b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/diff.patch
+@@ -1,4 +0,0 @@
+-diff --git a/autoencoders/data/fashionmnist.zip b/autoencoders/data/fashionmnist.zip
+-new file mode 100644
+-index 0000000..5507860
+-Binary files /dev/null and b/autoencoders/data/fashionmnist.zip differ
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/model-best.h5 b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/model-best.h5
+index d3c529a..a47cfd1 100644
+Binary files a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/model-best.h5 and b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/model-best.h5 differ
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-events.jsonl b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-events.jsonl
+index b6dd08f..64f328c 100644
+--- a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-events.jsonl
++++ b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-events.jsonl
+@@ -2,5 +2,7 @@
+ {"system.network.sent":2223104,"system.network.recv":2017280,"system.disk":26.2,"_wandb":true,"_runtime":33,"system.proc.memory.rssMB":359.71,"system.proc.memory.availableMB":6577.5,"system.cpu":76.13,"system.proc.cpu.threads":59,"system.memory":59.9,"system.proc.memory.percent":2.2,"_timestamp":1547054028}
+ {"system.network.sent":1985536,"system.network.recv":1714176,"system.disk":26.2,"_wandb":true,"_runtime":61,"system.proc.memory.rssMB":368.54,"system.proc.memory.availableMB":6453.56,"system.cpu":65.6,"system.proc.cpu.threads":59.07,"system.memory":60.61,"system.proc.memory.percent":2.25,"_timestamp":1547054404}
+ {"system.network.sent":2757632,"system.network.recv":2393088,"system.disk":26.2,"_wandb":true,"_runtime":73,"system.proc.memory.rssMB":370,"system.proc.memory.availableMB":6450.8,"system.cpu":73.63,"system.proc.cpu.threads":59,"system.memory":60.65,"system.proc.memory.percent":2.26,"_timestamp":1547054416}
+-{"system.cpu": 61.28, "system.memory": 60.7, "system.disk": 26.2, "system.proc.memory.availableMB": 6438.89, "system.proc.memory.rssMB": 378.06, "system.proc.memory.percent": 2.31, "system.proc.cpu.threads": 58.87, "system.network.sent": 1743872, "system.network.recv": 1632256, "_wandb": true, "_timestamp": 1547054851, "_runtime": 101}
+-{"system.cpu": 69.55, "system.memory": 60.74, "system.disk": 26.2, "system.proc.memory.availableMB": 6436.16, "system.proc.memory.rssMB": 379.29, "system.proc.memory.percent": 2.32, "system.proc.cpu.threads": 60.25, "system.network.sent": 2590720, "system.network.recv": 2463744, "_wandb": true, "_timestamp": 1547054866, "_runtime": 116}
++{"system.network.sent":1743872,"system.network.recv":1632256,"system.disk":26.2,"_wandb":true,"_runtime":101,"system.proc.memory.rssMB":378.06,"system.proc.memory.availableMB":6438.89,"system.cpu":61.28,"system.proc.cpu.threads":58.87,"system.memory":60.7,"system.proc.memory.percent":2.31,"_timestamp":1547054851}
++{"system.network.sent":2590720,"system.network.recv":2463744,"system.disk":26.2,"_wandb":true,"_runtime":116,"system.proc.memory.rssMB":379.29,"system.proc.memory.availableMB":6436.16,"system.cpu":69.55,"system.proc.cpu.threads":60.25,"system.memory":60.74,"system.proc.memory.percent":2.32,"_timestamp":1547054866}
++{"system.network.sent":2022400,"system.network.recv":1952768,"system.disk":26.3,"_wandb":true,"_runtime":144,"system.proc.memory.rssMB":216.79,"system.proc.memory.availableMB":7012.84,"system.cpu":63.77,"system.proc.cpu.threads":59,"system.memory":57.21,"system.proc.memory.percent":1.32,"_timestamp":1547076739}
++{"system.network.sent":3111936,"system.network.recv":3058688,"system.disk":26.3,"_wandb":true,"_runtime":162,"system.proc.memory.rssMB":242.93,"system.proc.memory.availableMB":6946.06,"system.cpu":68.91,"system.proc.cpu.threads":59,"system.memory":57.61,"system.proc.memory.percent":1.48,"_timestamp":1547076757}
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-history.jsonl b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-history.jsonl
+index d53c8d7..2da4efd 100644
+--- a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-history.jsonl
++++ b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-history.jsonl
+@@ -1,20 +1,10 @@
+-{"acc":0.37033333333333335,"_step":10,"val_acc":0.4605,"loss":0.12555019333759943,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[3,7,3,3,7,9,9,3,3,6,3,3,3,3,3,7,6,6,7,3,7,3,3,9,6,9,3,6,6,6,9,1,6,3,9,7]},"_runtime":39.45934081077576,"epoch":0,"_timestamp":1.54705438142946e+09,"val_loss":0.10775596972703934}
+-{"acc":0.48645,"_step":11,"val_acc":0.5365,"loss":0.10252779480616252,"examples":{"captions":[6,6,6,6,1,3,9,0,0,9,6,6,3,6,0,9,1,9,0,0,9,0,1,6,6,6,7,6,7,0,6,3,3,6,6,7],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":43.31734776496887,"epoch":1,"_timestamp":1.547054385287466e+09,"val_loss":0.09250116848945618}
+-{"acc":0.5549333333333333,"_step":12,"val_acc":0.5597,"loss":0.08884350731571515,"examples":{"captions":[1,6,6,7,3,7,0,3,6,9,0,7,6,7,1,3,6,9,0,3,0,3,6,6,6,3,9,6,9,9,1,3,3,0,1,9],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":47.14058780670166,"epoch":2,"_timestamp":1.5470543891107059e+09,"val_loss":0.0879279345870018}
+-{"acc":0.56235,"_step":13,"val_acc":0.5732,"loss":0.08740246191223462,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[1,1,6,0,1,7,7,6,9,7,3,7,3,6,9,9,1,7,3,9,3,3,3,3,1,9,7,9,7,9,3,9,3,1,9,1]},"_runtime":51.13724875450134,"epoch":3,"_timestamp":1.547054393107368e+09,"val_loss":0.08525070884227752}
+-{"acc":0.5663666666666667,"_step":14,"val_acc":0.5708,"loss":0.08661899678111076,"examples":{"captions":[1,1,6,9,1,1,3,6,0,7,6,6,3,9,0,9,3,3,3,1,9,6,0,3,3,3,7,9,1,3,3,0,7,1,1,9],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":54.942731857299805,"epoch":4,"_timestamp":1.54705439691285e+09,"val_loss":0.08577634116411209}
+-{"acc":0.5686666666666667,"_step":15,"val_acc":0.5759,"loss":0.08617618461648623,"examples":{"count":36,"_type":"images","captions":[6,7,1,9,9,6,3,7,3,0,1,0,0,7,6,9,3,6,6,9,1,3,9,7,3,7,3,1,3,3,0,7,1,3,7,1],"width":28,"height":28},"_runtime":58.73385787010193,"epoch":5,"_timestamp":1.547054400703976e+09,"val_loss":0.08474348447322845}
+-{"acc":0.5638333333333333,"_step":16,"val_acc":0.576,"loss":0.08713080350458623,"examples":{"_type":"images","captions":[9,0,6,3,3,6,1,0,7,3,9,0,6,1,3,7,1,6,0,9,3,6,6,9,6,9,6,3,0,9,9,1,0,9,0,1],"width":28,"height":28,"count":36},"_runtime":62.534467935562134,"epoch":6,"_timestamp":1.547054404504586e+09,"val_loss":0.08471752420067787}
+-{"acc":0.5696166666666667,"_step":17,"val_acc":0.564,"loss":0.08598956367572148,"examples":{"count":36,"_type":"images","captions":[0,1,1,7,6,9,9,6,0,3,1,7,9,9,3,7,3,6,1,9,9,7,7,0,7,1,7,6,9,9,6,6,3,3,3,1],"width":28,"height":28},"_runtime":66.40408492088318,"epoch":7,"_timestamp":1.547054408374203e+09,"val_loss":0.08710112398862839}
+-{"acc":0.5606,"_step":18,"val_acc":0.5615,"loss":0.08779503810902436,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[6,1,0,3,9,7,9,6,9,3,3,9,9,9,0,1,1,3,7,1,9,1,0,0,6,9,0,6,9,3,0,9,6,0,9,9]},"_runtime":70.41341400146484,"epoch":8,"_timestamp":1.547054412383532e+09,"val_loss":0.08762676790952682}
+-{"acc":0.5660166666666666,"_step":19,"val_acc":0.5788,"loss":0.0866970131278038,"examples":{"captions":[7,1,6,3,6,9,9,3,3,6,7,6,1,1,1,7,0,1,0,7,6,6,0,3,6,9,3,0,9,7,9,6,9,0,1,7],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":74.28016090393066,"epoch":9,"_timestamp":1.547054416250279e+09,"val_loss":0.08416075063943863}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [7, 0, 3, 7, 1, 4, 4, 7, 6, 3, 6, 7, 4, 6, 4, 4, 7, 7, 0, 7, 1, 7, 7, 0, 4, 8, 7, 0, 8, 8, 3, 1, 8, 2, 2, 6]}, "epoch": 0, "val_loss": 4.039584887886047, "val_acc": 0.7458, "loss": 5.489286775588989, "acc": 0.6539166666666667, "_runtime": 80.13135600090027, "_timestamp": 1547054828.863065, "_step": 20}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [8, 7, 7, 0, 1, 0, 3, 4, 0, 2, 4, 2, 4, 0, 3, 4, 7, 4, 4, 6, 6, 3, 8, 2, 0, 3, 3, 3, 3, 0, 4, 3, 7, 4, 8, 2]}, "epoch": 1, "val_loss": 3.9718548126220705, "val_acc": 0.7519, "loss": 4.155007290649414, "acc": 0.7391833333333333, "_runtime": 84.30822896957397, "_timestamp": 1547054833.039938, "_step": 21}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [3, 3, 8, 2, 7, 8, 3, 8, 3, 0, 3, 3, 1, 1, 6, 1, 6, 1, 4, 6, 8, 8, 1, 4, 0, 6, 2, 8, 7, 0, 3, 7, 7, 3, 1, 8]}, "epoch": 2, "val_loss": 3.862164073562622, "val_acc": 0.7595, "loss": 4.058685743872324, "acc": 0.7461833333333333, "_runtime": 88.39641785621643, "_timestamp": 1547054837.1281269, "_step": 22}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [0, 2, 6, 4, 4, 0, 1, 4, 6, 1, 4, 4, 1, 3, 2, 0, 7, 7, 0, 7, 3, 6, 2, 8, 1, 4, 6, 8, 4, 0, 7, 2, 6, 8, 0, 6]}, "epoch": 3, "val_loss": 4.0549396137237546, "val_acc": 0.7469, "loss": 4.035302396265665, "acc": 0.7478333333333333, "_runtime": 92.5434558391571, "_timestamp": 1547054841.2751648, "_step": 23}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [8, 1, 7, 1, 6, 7, 2, 8, 1, 8, 8, 8, 6, 7, 2, 3, 0, 2, 3, 1, 8, 3, 8, 4, 7, 3, 2, 3, 1, 6, 3, 6, 3, 0, 3, 7]}, "epoch": 4, "val_loss": 4.25863023891449, "val_acc": 0.7341, "loss": 3.9818177101135253, "acc": 0.7514333333333333, "_runtime": 96.72039484977722, "_timestamp": 1547054845.4521039, "_step": 24}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [1, 3, 2, 2, 8, 2, 3, 3, 7, 1, 6, 2, 2, 1, 8, 4, 1, 7, 4, 2, 0, 6, 6, 0, 3, 3, 4, 8, 8, 2, 7, 1, 4, 6, 8, 7]}, "epoch": 5, "val_loss": 3.863334894180298, "val_acc": 0.7592, "loss": 3.982485375595093, "acc": 0.7513333333333333, "_runtime": 100.8665189743042, "_timestamp": 1547054849.598227, "_step": 25}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [7, 7, 2, 0, 1, 8, 3, 6, 0, 1, 8, 2, 8, 3, 1, 2, 4, 8, 7, 4, 2, 6, 8, 4, 1, 4, 6, 7, 4, 3, 3, 6, 8, 4, 2, 1]}, "epoch": 6, "val_loss": 3.9110580936431885, "val_acc": 0.7562, "loss": 3.96010504471461, "acc": 0.7530333333333333, "_runtime": 105.0249707698822, "_timestamp": 1547054853.75668, "_step": 26}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [0, 3, 7, 2, 4, 3, 0, 2, 7, 3, 1, 3, 4, 6, 7, 3, 2, 8, 4, 8, 8, 7, 3, 7, 0, 6, 7, 8, 0, 2, 8, 1, 7, 0, 3, 2]}, "epoch": 7, "val_loss": 4.128565529632568, "val_acc": 0.7422, "loss": 3.9425116720199584, "acc": 0.7541666666666667, "_runtime": 109.31738591194153, "_timestamp": 1547054858.049095, "_step": 27}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [4, 2, 4, 1, 8, 4, 0, 4, 4, 6, 7, 2, 2, 4, 3, 2, 7, 1, 8, 2, 4, 4, 7, 1, 0, 4, 7, 1, 1, 6, 2, 7, 0, 3, 3, 8]}, "epoch": 8, "val_loss": 3.8786129070281983, "val_acc": 0.7588, "loss": 3.9462560699145, "acc": 0.7537666666666667, "_runtime": 113.50852108001709, "_timestamp": 1547054862.2402291, "_step": 28}
+-{"examples": {"width": 28, "height": 28, "count": 36, "_type": "images", "captions": [4, 1, 3, 4, 1, 7, 2, 7, 7, 7, 7, 0, 1, 4, 0, 4, 3, 8, 0, 3, 4, 8, 6, 6, 3, 0, 1, 3, 8, 2, 2, 0, 7, 0, 7, 8]}, "epoch": 9, "val_loss": 3.9826867660522463, "val_acc": 0.752, "loss": 3.9357283661842346, "acc": 0.7548166666666667, "_runtime": 117.71433091163635, "_timestamp": 1547054866.446039, "_step": 29}
++{"acc":0.7554,"_step":30,"val_acc":0.7598,"loss":3.9269663882691415,"examples":{"height":28,"count":36,"_type":"images","captions":[8,3,0,6,2,4,7,4,1,1,4,4,7,0,2,4,1,2,2,0,6,4,8,8,4,6,2,4,8,3,8,8,8,8,2,7],"width":28},"_runtime":123.04496097564697,"epoch":0,"_timestamp":1.547076716159793e+09,"val_loss":3.8589769035339354}
++{"acc":0.75495,"_step":31,"val_acc":0.7606,"loss":3.935327146657308,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[8,0,4,1,3,4,8,7,4,6,7,7,7,0,4,1,7,6,8,6,8,3,8,1,8,4,4,1,1,1,6,8,2,8,1,1]},"_runtime":127.2775309085846,"epoch":1,"_timestamp":1.5470767203923619e+09,"val_loss":3.8464005401611328}
++{"acc":0.7542166666666666,"_step":32,"val_acc":0.7556,"loss":3.9444969665845235,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[3,7,3,8,7,8,3,4,4,4,1,3,1,6,3,2,8,0,8,2,4,8,0,7,3,3,0,7,0,7,4,8,4,1,8,3]},"_runtime":131.76121187210083,"epoch":2,"_timestamp":1.547076724876042e+09,"val_loss":3.920012297821045}
++{"acc":0.7562666666666666,"_step":33,"val_acc":0.76,"loss":3.9122848504066465,"examples":{"count":36,"_type":"images","captions":[2,2,3,2,6,1,7,0,0,2,0,7,7,1,1,0,7,7,0,8,1,7,4,7,7,8,3,8,3,3,4,8,2,0,4,4],"width":28,"height":28},"_runtime":136.21624875068665,"epoch":3,"_timestamp":1.547076729331079e+09,"val_loss":3.8565355819702147}
++{"acc":0.75885,"_step":34,"val_acc":0.7583,"loss":3.8727930990854897,"examples":{"captions":[4,8,4,3,3,4,3,7,1,8,6,4,3,2,1,3,4,4,3,2,8,4,2,7,2,1,0,0,3,3,2,4,4,6,0,4],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":140.76920080184937,"epoch":4,"_timestamp":1.547076733884031e+09,"val_loss":3.88033939743042}
++{"acc":0.76005,"_step":35,"val_acc":0.7634,"loss":3.853859852822622,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[6,8,4,8,3,7,8,8,0,3,1,7,0,6,8,1,7,6,1,2,7,2,6,3,1,1,8,2,0,6,6,1,3,4,4,3]},"_runtime":145.447114944458,"epoch":5,"_timestamp":1.5470767385619452e+09,"val_loss":3.8001386753082276}
++{"acc":0.7605833333333333,"_step":36,"val_acc":0.7544,"loss":3.8437700129508974,"examples":{"width":28,"height":28,"count":36,"_type":"images","captions":[4,6,6,1,8,2,6,4,0,2,6,8,8,1,2,6,2,8,1,4,8,4,0,3,3,4,7,7,6,0,1,3,4,8,3,8]},"_runtime":150.16837787628174,"epoch":6,"_timestamp":1.547076743283208e+09,"val_loss":3.9450616035461428}
++{"acc":0.7604666666666666,"_step":37,"val_acc":0.7586,"loss":3.8492344068527222,"examples":{"count":36,"_type":"images","captions":[7,3,8,4,3,3,3,6,8,8,3,4,7,3,8,0,3,3,8,3,2,3,0,3,1,4,2,8,2,4,7,2,8,4,8,7],"width":28,"height":28},"_runtime":154.85573410987854,"epoch":7,"_timestamp":1.5470767479705641e+09,"val_loss":3.8724769859313963}
++{"acc":0.7586333333333334,"_step":38,"val_acc":0.7635,"loss":3.8744329147020977,"examples":{"_type":"images","captions":[8,6,6,0,4,8,4,8,3,3,1,8,8,4,6,8,3,0,7,0,6,0,7,7,7,6,3,1,2,3,2,2,3,0,6,2],"width":28,"height":28,"count":36},"_runtime":159.51338076591492,"epoch":8,"_timestamp":1.547076752628211e+09,"val_loss":3.799792833709717}
++{"acc":0.75995,"_step":39,"val_acc":0.7618,"loss":3.8580248108863833,"examples":{"captions":[7,7,8,4,2,4,2,2,3,7,8,1,1,4,7,4,2,3,4,4,1,8,8,2,0,3,6,1,0,0,0,8,7,1,1,6],"width":28,"height":28,"count":36,"_type":"images"},"_runtime":164.22842597961426,"epoch":9,"_timestamp":1.547076757343256e+09,"val_loss":3.823851259613037}
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-metadata.json b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-metadata.json
+index 59227f0..8c92e42 100644
+--- a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-metadata.json
++++ b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-metadata.json
+@@ -2,14 +2,14 @@
+     "root": "/Users/martinfabbri/workspace/github/dl-playground",
+     "git": {
+         "remote": "https://github.com/martin-fabbri/dl-playground.git",
+-        "commit": "2fbb11ef69b391a0c319fc670aa1d5f43b642822"
++        "commit": "08e16ef80c3e99365b23f2dbf3f6f3fe491adead"
+     },
+     "email": "martin.fabbri.a@gmail.com",
+-    "startedAt": "2019-01-09T17:27:03.011869",
+-    "host": "FJAdmins-MacBook-Pro-2.local",
++    "startedAt": "2019-01-09T23:36:42.014045",
++    "host": "FJAdmins-MBP-2.afn.flowjo.com",
+     "username": "martinfabbri",
+     "program": "<python with no main file>",
+     "state": "running",
+-    "heartbeatAt": "2019-01-09T17:27:47.368452",
++    "heartbeatAt": "2019-01-09T23:36:42.059798",
+     "jobType": null
+ }
+diff --git a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-summary.json b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-summary.json
+index 31e1000..6c274cd 100644
+--- a/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-summary.json
++++ b/dl-debug/wandb/run-20190109_165533-pvp2h2wf/wandb-summary.json
+@@ -52,50 +52,50 @@
+         "count": 36,
+         "_type": "images",
+         "captions": [
++            7,
++            7,
++            8,
+             4,
+-            1,
+-            3,
++            2,
+             4,
+-            1,
+-            7,
+             2,
++            2,
++            3,
+             7,
+-            7,
+-            7,
+-            7,
+-            0,
++            8,
++            1,
+             1,
+             4,
+-            0,
++            7,
+             4,
++            2,
+             3,
++            4,
++            4,
++            1,
+             8,
++            8,
++            2,
+             0,
+             3,
+-            4,
+-            8,
+-            6,
+             6,
+-            3,
+-            0,
+             1,
+-            3,
+-            8,
+-            2,
+-            2,
+             0,
+-            7,
+             0,
++            0,
++            8,
+             7,
+-            8
++            1,
++            1,
++            6
+         ]
+     },
+     "epoch": 9,
+-    "val_loss": 3.9826867660522463,
+-    "val_acc": 0.752,
+-    "loss": 3.9357283661842346,
+-    "acc": 0.7548166666666667,
+-    "_runtime": 117.71433091163635,
+-    "_timestamp": 1547054866.446039,
+-    "_step": 29
++    "val_loss": 3.823851259613037,
++    "val_acc": 0.7618,
++    "loss": 3.8580248108863833,
++    "acc": 0.75995,
++    "_runtime": 164.22842597961426,
++    "_timestamp": 1547076757.343256,
++    "_step": 39
+ }

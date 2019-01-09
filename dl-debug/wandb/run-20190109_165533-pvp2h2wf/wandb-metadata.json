@@ -2,14 +2,14 @@
     "root": "/Users/martinfabbri/workspace/github/dl-playground",
     "git": {
         "remote": "https://github.com/martin-fabbri/dl-playground.git",
-        "commit": "2fbb11ef69b391a0c319fc670aa1d5f43b642822"
+        "commit": "08e16ef80c3e99365b23f2dbf3f6f3fe491adead"
     },
     "email": "martin.fabbri.a@gmail.com",
-    "startedAt": "2019-01-09T17:27:03.011869",
-    "host": "FJAdmins-MacBook-Pro-2.local",
+    "startedAt": "2019-01-09T23:36:42.014045",
+    "host": "FJAdmins-MBP-2.afn.flowjo.com",
     "username": "martinfabbri",
     "program": "<python with no main file>",
     "state": "running",
-    "heartbeatAt": "2019-01-09T17:27:47.368452",
+    "heartbeatAt": "2019-01-09T23:37:30.258964",
     "jobType": null
 }
