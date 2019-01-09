@@ -1,0 +1,15 @@
+{
+    "root": "/Users/martinfabbri/workspace/github/dl-playground",
+    "git": {
+        "remote": "https://github.com/martin-fabbri/dl-playground.git",
+        "commit": "2fbb11ef69b391a0c319fc670aa1d5f43b642822"
+    },
+    "email": "martin.fabbri.a@gmail.com",
+    "startedAt": "2019-01-09T16:20:51.469862",
+    "host": "FJAdmins-MacBook-Pro-2.local",
+    "username": "martinfabbri",
+    "program": "<python with no main file>",
+    "state": "running",
+    "heartbeatAt": "2019-01-09T16:21:17.696175",
+    "jobType": null
+}

@@ -1,0 +1,57 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_3",
+                "id": "flatten_3",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_3_input",
+                "id": "flatten_3_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_2",
+                "id": "dense_2",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    1
+                ],
+                "num_parameters": 785
+            }
+        ],
+        "edges": [
+            [
+                "flatten_3_input",
+                "flatten_3"
+            ],
+            [
+                "flatten_3",
+                "dense_2"
+            ]
+        ]
+    },
+    "epoch": 9,
+    "val_loss": 6343.7837640625,
+    "val_acc": 0.006,
+    "loss": 2861.836669921875,
+    "acc": 0.05000000074505806,
+    "_runtime": 94.97888994216919,
+    "_timestamp": 1547026401.129293,
+    "_step": 48
+}
