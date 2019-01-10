@@ -1,0 +1,4 @@
+[default]
+entity: martin-fabbri-a
+project: dl-playground-cnn_vanilla-cnn
+base_url: https://api.wandb.ai
