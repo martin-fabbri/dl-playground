@@ -113,3 +113,5 @@ sm_dataset/
 # monitoring
 wandb/
 
+*.h5
+
